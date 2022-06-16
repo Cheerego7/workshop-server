@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@koa/cors': ^3.3.0
+  '@netless/devops-scripts': ^0.0.7
   '@types/koa': ^2.13.4
   '@types/koa-bodyparser': ^4.3.7
   '@types/koa-ratelimit': ^4.2.4
   '@types/koa-router': ^7.4.4
   '@types/koa__cors': ^3.3.0
   '@types/node': '16'
+  '@types/uuid': ^8.3.4
   dotenv: ^16.0.0
   koa: ^2.13.4
   koa-bodyparser: ^4.3.0
@@ -16,14 +18,17 @@ specifiers:
   nodemon: ^2.0.16
   ts-node: ^10.7.0
   typescript: ^4.6.2
+  uuid: ^8.3.2
 
 dependencies:
   '@koa/cors': 3.3.0
+  '@netless/devops-scripts': 0.0.7
   dotenv: 16.0.1
   koa: 2.13.4
   koa-bodyparser: 4.3.0
   koa-ratelimit: 5.0.1
   koa-router: 10.1.1
+  uuid: 8.3.2
 
 devDependencies:
   '@types/koa': 2.13.4
@@ -32,6 +37,7 @@ devDependencies:
   '@types/koa-router': 7.4.4
   '@types/koa__cors': 3.3.0
   '@types/node': 16.11.39
+  '@types/uuid': 8.3.4
   nodemon: 2.0.16
   ts-node: 10.8.1_pjlhwcktroxhni6x7uirug5lya
   typescript: 4.7.3
@@ -66,6 +72,12 @@ packages:
     engines: {node: '>= 8.0.0'}
     dependencies:
       vary: 1.1.2
+    dev: false
+
+  /@netless/devops-scripts/0.0.7:
+    resolution: {integrity: sha512-2A8hF02DUiGVhrQNrGvH0aC4tHgTrY2YaYbHQpAdP6gpsNUdy65XcSc4aFhznb+uS8FE1pq4icrThqCYA0kYaA==}
+    dependencies:
+      '@types/node': 14.18.21
     dev: false
 
   /@sindresorhus/is/0.14.0:
@@ -218,6 +230,10 @@ packages:
     resolution: {integrity: sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==}
     dev: true
 
+  /@types/node/14.18.21:
+    resolution: {integrity: sha512-x5W9s+8P4XteaxT/jKF0PSb7XEvo5VmqEWgsMlyeY4ZlLK8I6aH6g5TPPyDlLAep+GYf4kefb7HFyc7PAO3m+Q==}
+    dev: false
+
   /@types/node/16.11.39:
     resolution: {integrity: sha512-K0MsdV42vPwm9L6UwhIxMAOmcvH/1OoVkZyCgEtVu4Wx7sElGloy/W7kMBNe/oJ7V/jW9BVt1F6RahH6e7tPXw==}
     dev: true
@@ -251,6 +267,10 @@ packages:
     dependencies:
       '@types/mime': 1.3.2
       '@types/node': 17.0.41
+    dev: true
+
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
     dev: true
 
   /abbrev/1.1.1:
@@ -1429,6 +1449,11 @@ packages:
     dependencies:
       prepend-http: 2.0.0
     dev: true
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: false
 
   /v8-compile-cache-lib/3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
