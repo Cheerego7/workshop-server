@@ -8,4 +8,4 @@ export const {
     NETLESS_SECRET_ACCESS_KEY,
 } = process.env;
 
-export const validDomains = ["https://workshop.netless.link"];
+export const validDomains = ["https://workshop.netless.link", "http://localhost:3000"];
