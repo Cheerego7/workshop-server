@@ -77,6 +77,12 @@ const createToken = <T extends {}>(
     };
 };
 
+export const createWhiteboardSDKToken = (lifespan = 1000 * 60 * 10): string => {
+    return sdkToken(NETLESS_ACCESS_KEY, NETLESS_SECRET_ACCESS_KEY, lifespan, {
+        role: TokenRole.Admin,
+    });
+};
+
 export const createWhiteboardRoomToken = (
     whiteboardRoomUUID: string,
     {
