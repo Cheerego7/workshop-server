@@ -3,4 +3,4 @@ import roomTokenController from "../controller/roomToken-Controller";
 
 export const roomToken = new Router();
 
-roomToken.get("/account", roomTokenController.getRoomToken);
+roomToken.get("/account", roomTokenController.createRoom);
